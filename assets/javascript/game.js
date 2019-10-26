@@ -1,7 +1,11 @@
+var gem1Val;
+var gem2Val;
+var gem3Val;
+var gem4Val;
 var randomNumber;
 var wins = 0;
 var losses= 0;
-var totalScore
+var totalScore = 0;
 
 
 
@@ -9,28 +13,30 @@ var randomNumber = function randomNumberGen() {
     return Math.floor(Math.random() * 102) + 19; 
 }
 
-var gem1Val = function randomNumberGem1() {  
-    return Math.floor(Math.random() * 12) + 1; 
-}
+// var gem1Val = function randomNumberGem1() {  
+//     return Math.floor(Math.random() * 12) + 1; 
+// }
 
-var gem2Val = function randomNumberGem2() {  
-    return Math.floor(Math.random() * 12) + 1; 
-}
+var gem1Val = Math.floor(Math.random() * 12) + 1;
 
-var gem3Val = function randomNumberGem3() {  
-    return Math.floor(Math.random() * 12) + 1; 
-}
+var gem2Val = Math.floor(Math.random() * 12) + 1;
 
-var gem4Val = function randomNumberGem4() {  
-    return Math.floor(Math.random() * 12) + 1; 
-}
+var gem3Val = Math.floor(Math.random() * 12) + 1;
+
+var gem4Val = Math.floor(Math.random() * 12) + 1;
+
 
 function gameStart() {
     randomNumberGen();
-    randomNumberGem1();
-    randomNumberGem2();
-    randomNumberGem3();
-    randomNumberGem4();
+    var gem1Val = Math.floor(Math.random() * 12) + 1;
+
+    var gem2Val = Math.floor(Math.random() * 12) + 1;
+
+    var gem3Val = Math.floor(Math.random() * 12) + 1;
+
+    var gem4Val = Math.floor(Math.random() * 12) + 1;
+
+    totalScore = 0;
 }
 
 
@@ -45,20 +51,37 @@ $('#losses').text(losses);
 
 $('#total-score').text(totalScore);
 
-if (totalScore === randomNumber) {
-    wins++;
-    gameStart();
-} else if (totalScore > randomNumber) {
-    losses++;
-    gameStart();
-} else {
+function winOrLose() {
+    if (totalScore == randomNumber) {
+        winner();
+    } else if (totalScore > randomNumber) {
+        loser();
+    } else {
 
+    }
+}
+
+function winner() {
+    wins++;
+    $('#wins').text(wins);
+    gameStart();
+}
+
+function loser() {
+    losses++;
+    $('#losses').text(losses);
+    gameStart();
 }
 
 $('#gem1').on("click", function() {
-   return totalScore = totalScore + gem1Val;
+   totalScore = totalScore + gem1Val;
+   $('#total-score').text(totalScore);
+   winOrLose();
 });
 
-
-
+$('#gem2').on("click", function() {
+    totalScore = totalScore + gem2Val;
+    $('#total-score').text(totalScore);
+    winOrLose();
+});
 
