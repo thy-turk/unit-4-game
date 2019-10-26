@@ -1,0 +1,32 @@
+body {
+    background-image: url(../images/destiny-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-top: 10px;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#ran-num {
+    font-size: 28px;
+}
+
+.random-style {
+    display: inline;
+    background-color: white;
+}
+
+.wins-style {
+    background-color: blue;
+    display: inline;
+}
