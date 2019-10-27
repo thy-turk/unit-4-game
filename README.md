@@ -9,6 +9,8 @@ You will try to match the random number that is generated each time a new game s
 ## Play the Game Here:
 https://thy-turk.github.io/unit-4-game/
 
+![Game Screenshot](/assets/images/webpage-screenshot.png)
+
 ## Tools Used:
 * Google Fonts
 * Html/CSS
