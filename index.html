@@ -15,9 +15,10 @@
     <div class="container">
         <h1>Engram Collector!</h1>
 
+        <!--Start of bootstrap-->
         <div class="row top-buffer">
-                <div class="col-md-1"></div>
-            <div class="col-md-10">
+                <div class="col-md-2"></div>
+            <div class="col-md-8">
                 <h2>
                     Rules: You will be given a random number at the start of the game. <br /><br />
                     Your job is to match that number by clicking on the assortment of engrams at the bottom.
@@ -27,27 +28,42 @@
                 </h2>
             </div>
         </div>
-       <p>Random Number: </p>
-        <p id="ran-num"><span id="random-number"></span></p>
-        <br />
-        
-        <p>Wins: </p>
-        <p><span id="wins"></span></p>
-        <br />
 
-        <p>Losses: </p>
-        <p><span id="losses"></span></p>
-        <br />
+        <div class="row top-buffer">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p id="random-text">Random Number: </p>
+                <p id="ran-num"><span id="random-number"></span></p>
+            </div>
+
+            <div class="col-md-3">
+                <p id="score-text">Your total score is: </p>
+                <p id="score-style"><span id="total-score"></span></p>
+            </div>
+        </div>
         
-        <p>Your total score is: </p>
-        <p><span id="total-score"></span></p>
-        <br />
+        <div class="row top-buffer">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <p id="win-text">Wins: </p>
+                <p id="win-style"><span id="wins"></span></p>
+            </div>
+
+            <div class="col-md-3">
+                <p id="losses-text">Losses: </p>
+                <p id="losses-style"><span id="losses"></span></p>
+            </div>
+        </div>
         
-        <input id="gem1" type="image" src="assets/images/uncommon-engram.png" />
-        <input id="gem2" type="image" src="assets/images/rare-engram.png" />
-        <input id="gem3" type="image" src="assets/images/legendary-engram.png" />
-        <input id="gem4" type="image" src="assets/images/exotic-engram.png" />
-        
+        <div class="row top-buffer">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <input id="gem1" type="image" src="assets/images/uncommon-engram.png" />
+                <input id="gem2" type="image" src="assets/images/rare-engram.png" />
+                <input id="gem3" type="image" src="assets/images/legendary-engram.png" />
+                <input id="gem4" type="image" src="assets/images/exotic-engram.png" />
+            </div>
+        </div>
     </div>
 
     

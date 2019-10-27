@@ -16,6 +16,9 @@ h2 {
     font-size: 18px;
     color: white;
     background: rgba(0,0,0,0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
 }
 
 .container {
@@ -24,11 +27,99 @@ h2 {
     
 }
 
-#ran-num {
-    font-size: 28px;
-}
-
 .top-buffer {
    margin-top: 20px;
+}
+
+#score-style {
+    font-size: 28px;
+    background: rgba(135,31,120,0.4);
+    padding-bottom: 10px;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#score-text {
+    background: rgba(135,31,120,0.4);
+    padding-top: 10px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#random-text {
+    background: rgba(135,31,120,0.4);
+    padding-top: 10px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#ran-num {
+    font-size: 28px;
+    background: rgba(135,31,120,0.4);
+    padding-bottom: 10px;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#win-style {
+    font-size: 28px;
+    background: rgba(0,0,139,0.4);
+    padding-bottom: 10px;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#win-text {
+    background: rgba(0,0,139,0.4);
+    padding-top: 10px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#losses-style {
+    font-size: 28px;
+    background: rgba(0,0,139,0.4);
+    padding-bottom: 10px;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+#losses-text {
+    background: rgba(0,0,139,0.4);
+    padding-top: 10px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+    text-align: center;
 }
 
