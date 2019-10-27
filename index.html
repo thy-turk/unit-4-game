@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Unit 4 Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -13,31 +14,40 @@
 
     <div class="container">
         <h1>Engram Collector!</h1>
-        
-        <div class="random-style">
-        <p>Random Number: </p>
+
+        <div class="row top-buffer">
+                <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h2>
+                    Rules: You will be given a random number at the start of the game. <br /><br />
+                    Your job is to match that number by clicking on the assortment of engrams at the bottom.
+                    Each of which have been given a random hidden value. Clicking on an engram will add its value
+                    to the total score. <br /><br />
+                    When the game restarts each of the crystals will have a new value.
+                </h2>
+            </div>
+        </div>
+       <p>Random Number: </p>
         <p id="ran-num"><span id="random-number"></span></p>
         <br />
-        </div>
-
-        <div class="wins-style">
+        
         <p>Wins: </p>
         <p><span id="wins"></span></p>
         <br />
-        </div>
 
         <p>Losses: </p>
         <p><span id="losses"></span></p>
         <br />
-
+        
         <p>Your total score is: </p>
         <p><span id="total-score"></span></p>
         <br />
-
+        
         <input id="gem1" type="image" src="assets/images/uncommon-engram.png" />
         <input id="gem2" type="image" src="assets/images/rare-engram.png" />
         <input id="gem3" type="image" src="assets/images/legendary-engram.png" />
         <input id="gem4" type="image" src="assets/images/exotic-engram.png" />
+        
     </div>
 
     
