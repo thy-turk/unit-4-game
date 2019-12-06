@@ -17,3 +17,6 @@ https://thy-turk.github.io/unit-4-game/
 * javascript
 * jquery
 * Bootstrap 
+
+## Problems Faced
+I had a difficult time getting the game to reset when the user had either won or lost. I worked through my code and made revisions and eventually got it to work.
